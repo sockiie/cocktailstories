@@ -24,8 +24,4 @@ export default {
 
 </script>
 
-<style scoped>
-.test{
-  margin: 2% 10%;
-}
-</style>
+

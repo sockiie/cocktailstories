@@ -36,16 +36,8 @@ export default {
   methods: {
     async showdetails(drink) {
       this.details = !this.details;
-      console.log(drink);
-
-      this.randomcocktails = await this.fetchDetail(drink);
+      this.randomcocktails = await drink;
       //console.log(this.randomcocktails);
-    },
-
-    async fetchDetail(drink) {
-      const data = await drink;
-      console.log(data);
-      return data;
     },
 
     async fetchDrink(idDrink) {
@@ -65,7 +57,6 @@ export default {
     },
 
     async deleteDrink(idDrink) {
-      console.log(idDrink);
       if (confirm("Are you sure?")) {
         const res = await fetch(`api/drinks/${idDrink}`, {
           method: "DELETE",

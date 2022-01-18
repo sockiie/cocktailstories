@@ -52,14 +52,7 @@ export default {
     randomcocktails: Object,
   },
   methods: {
-    /*
-      refreshCocktail(){
-          console.log("test")
-          //this.$forceUpdate();
-          //window.location.reload()
-          this.$parent.fetchrandomCocktail();
-      }
-      */
+
   },
 };
 </script>

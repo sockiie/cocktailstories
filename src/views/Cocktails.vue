@@ -3,7 +3,7 @@
     <DrinkDetails :randomcocktails="randomcocktails" />
     <el-container class="center">
       <el-button @click="next" round>Next</el-button>
-      <el-button @click="addDrink" round>Favorise</el-button>
+      <el-button @click="addDrink" round>Favorite</el-button>
     </el-container>
   </div>
 </template>
@@ -28,8 +28,7 @@ export default {
 
       const data = await res.json();
 
-      console.log(data.drinks[0]);
-
+   
       return data.drinks[0];
     },
 
@@ -38,7 +37,7 @@ export default {
     },
 
     async addDrink() {
-      console.log("test" + this.randomcocktails);
+
       if (confirm("Are you sure?")) {
         const res = await fetch("api/drinks", {
           method: "POST",
