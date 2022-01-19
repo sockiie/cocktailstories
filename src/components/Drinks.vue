@@ -15,6 +15,7 @@
 
 <script>
 import Drink from "./Drink.vue";
+
 export default {
   name: "Drinks",
   props: {
@@ -32,7 +33,6 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   column-gap: 5px;
   row-gap: 5px;
 }

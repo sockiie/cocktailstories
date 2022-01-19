@@ -44,16 +44,13 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "Cocktail",
   props: {
     randomcocktails: Object,
   },
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 
@@ -61,7 +58,6 @@ export default {
 .space {
   margin-left: 30px;
 }
-
 .center {
   margin: 3% 20%;
 }

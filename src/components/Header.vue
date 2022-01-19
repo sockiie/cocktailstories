@@ -7,8 +7,7 @@
     text-color="#D3D3D3"
     active-text-color="#FFFFFF"
     router="true"
-    @select="handleSelect"
-  >
+    @select="handleSelect">
     <el-container>
       <el-container>
         <h4 class="marginleft" style="color: white">Cocktail Stories</h4>
@@ -16,8 +15,7 @@
           <el-menu-item index="/">Home</el-menu-item>
           <el-menu-item index="/Cocktails">Cocktails</el-menu-item>
           <el-menu-item class="radius" index="/Favorites"
-            >Favorites</el-menu-item
-          >
+            >Favorites</el-menu-item>
         </el-container>
       </el-container>
     </el-container>
@@ -36,7 +34,6 @@ export default {
   justify-content: flex-end;
   margin-right: 30px;
 }
-
 .marginleft {
   margin-left: 30px;
 }

@@ -1,32 +1,12 @@
-/*
-Write your variables here. All available variables can be
-found in element-plus/packages/theme-chalk/src/common/var.scss.
-For example, to overwrite the theme color:
-*/
-$--color-primary: hotpink;
+$--font-path: "~element-plus/lib/theme-chalk/fonts";
 
-/* icon font path, required */
-$--font-path: '~element-plus/lib/theme-chalk/fonts';
-
-
-
-
-
-html,body{
-    min-height: 100vh;
-    background-color: black;
-    
-    max-width: 100%;
- 
-    font-family: 'Raleway', sans-serif;
-   
+html,
+body {
+  min-height: 100vh;
+  background-color: black;
+  max-width: 100%;
+  font-family: "Raleway", sans-serif;
 }
 
-
-
-
- 
-
-
 @import "~element-plus/packages/theme-chalk/src/index";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");

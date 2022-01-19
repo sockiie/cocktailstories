@@ -22,7 +22,6 @@ export default {
 .fas {
   color: white;
 }
-
 .el-footer {
   border-top: 1px solid;
   border-color: white;

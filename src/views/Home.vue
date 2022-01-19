@@ -14,15 +14,12 @@
     Welcome to Cocktail Stories where creating amazing cocktails at home has
     never been so easy, affordable and fun! Using our free random cocktail
     generator, we guarantee you will spend more time enjoying your cocktails
-    instead of searching online for what you can make. <br /><br /><br /><b
-      >Enjoy!</b
-    >
+    instead of searching online for what you can make. 
+    <br /><br /><br /><b>Enjoy!</b>
   </p>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   components: {},
 };
@@ -33,11 +30,13 @@ export default {
   width: 50%;
   height: auto;
 }
+
 .picturetext {
   margin-left: 2%;
   display: flex;
   align-items: center;
 }
+
 .longtext {
   margin: 10%;
   text-align: center;

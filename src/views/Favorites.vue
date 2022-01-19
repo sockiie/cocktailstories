@@ -5,8 +5,7 @@
         <Drinks
           @show-details="showdetails"
           @delete-drink="deleteDrink"
-          :drinks="drinks"
-        />
+          :drinks="drinks"/>
       </div>
       <div v-show="!details">
         <DrinkDetails :randomcocktails="randomcocktails" />
@@ -14,7 +13,6 @@
     </el-col>
   </el-row>
 </template>
-
 
 <script>
 import DrinkDetails from "../components/DrinkDetails.vue";
@@ -26,6 +24,7 @@ export default {
     Drinks,
     DrinkDetails,
   },
+  
   data() {
     return {
       drinks: [],
@@ -33,26 +32,22 @@ export default {
       randomcocktails: [],
     };
   },
+
   methods: {
     async showdetails(drink) {
       this.details = !this.details;
       this.randomcocktails = await drink;
-      //console.log(this.randomcocktails);
     },
 
     async fetchDrink(idDrink) {
       const res = await fetch(`api/drinks/${idDrink}`);
-
       const data = await res.json();
-
       return data;
     },
 
     async fetchDrinks() {
       const res = await fetch("api/drinks");
-
       const data = await res.json();
-      console.log(data);
       return data;
     },
 
@@ -70,7 +65,7 @@ export default {
       }
     },
   },
-
+  
   async created() {
     this.drinks = await this.fetchDrinks();
   },

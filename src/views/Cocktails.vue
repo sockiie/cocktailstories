@@ -10,25 +10,25 @@
 
 <script>
 import DrinkDetails from "../components/DrinkDetails.vue";
+
 export default {
   name: "Cocktails",
   components: {
     DrinkDetails,
   },
+
   data() {
     return {
       randomcocktails: [],
     };
   },
+
   methods: {
     async fetchrandomCocktail() {
       const res = await fetch(
         "https://www.thecocktaildb.com/api/json/v1/1/random.php"
       );
-
       const data = await res.json();
-
-   
       return data.drinks[0];
     },
 
@@ -37,7 +37,6 @@ export default {
     },
 
     async addDrink() {
-
       if (confirm("Are you sure?")) {
         const res = await fetch("api/drinks", {
           method: "POST",
@@ -46,9 +45,7 @@ export default {
           },
           body: JSON.stringify(this.randomcocktails),
         });
-
         const data = await res.json();
-
         this.randomcocktails = data;
       }
     },
