@@ -58,7 +58,7 @@ Fake Rest API
 https://github.com/typicode/json-server
 
 Die async Methoden (fetchDrink,fetchDrinks,deleteDrink,addDrink) um in die db.json daten abzuspeichern haben wir in diesem Video erlernt und auf unsere App angeglichen.
-vue.config.js ist  aus dem Video entnommen.
+vue.config.js ist aus dem Video entnommen.
 https://www.youtube.com/watch?v=qZXt1Aom3Cs&t=4915s
 
 
