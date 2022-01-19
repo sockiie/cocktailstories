@@ -61,6 +61,9 @@ Die async Methoden (fetchDrink,fetchDrinks,deleteDrink,addDrink) um in die db.js
 vue.config.js ist aus dem Video entnommen.
 https://www.youtube.com/watch?v=qZXt1Aom3Cs&t=4915s
 
+UI Elemente wie Card, Button, Raster etc haben wir aus dem Element UI Framework entnommen.
+https://element-plus.org/en-US/
+
 
 ```
 
