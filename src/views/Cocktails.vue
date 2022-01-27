@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script >
 import DrinkDetails from "../components/DrinkDetails.vue";
 
 export default {

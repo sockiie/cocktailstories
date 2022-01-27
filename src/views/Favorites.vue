@@ -34,9 +34,9 @@ export default {
   },
 
   methods: {
-    async showdetails(drink) {
+     showdetails(drink) {
       this.details = !this.details;
-      this.randomcocktails = await drink;
+      this.randomcocktails = drink;
     },
 
     async fetchDrink(idDrink) {
